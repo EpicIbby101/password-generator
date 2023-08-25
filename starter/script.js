@@ -147,10 +147,12 @@ function getRandom(arr) {
 function generatePassword() {
   let options = getPasswordOptions();
 
+  // If options are not selected, return an empty string
   if (!options) {
     return "";
   }
 
+  // Array to store all possible characters based on user choices
   let possibleCharacters = [];
 
   if (options.lowercase) {
@@ -166,13 +168,14 @@ function generatePassword() {
     possibleCharacters = possibleCharacters.concat(specialCharacters);
   }
 
+  // Initialize password string
   let generatePassword = "";
 
+  // Generate password
   for (let i = 0; i < options.length; i++) {
     let randomCharacters = getRandom(possibleCharacters);
     generatePassword += randomCharacters;
   }
-
   return generatePassword;
 }
 
