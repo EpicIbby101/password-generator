@@ -12,6 +12,7 @@ The app will ask the user for the following before creating a random password:
 - Whether you'd like to use special characters
 
 Here is the link to the deployed app:
+https://epicibby101.github.io/password-generator/starter/index
 
 And here is a screenshot of the app itself:
 ![Screenshot 2023-08-25 192204](https://github.com/EpicIbby101/password-generator/assets/86202881/c1a886cb-a1fa-459a-af15-955b671413fb)
